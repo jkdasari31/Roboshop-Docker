@@ -4,7 +4,7 @@ networks:
       name: roboshop
 volumes:
   mongodb: #docker volume create mongodb
-#  redis:
+  redis:
 #  mysql:
 #  rabbitmq:
 services:
@@ -36,8 +36,8 @@ services:
     - catalogue
     - cart
     - user
-    - shipping
-    - payment
+  #  - shipping
+  #  - payment
 
   redis:
     image: redis
